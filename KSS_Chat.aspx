@@ -119,7 +119,7 @@
 		
 </div>
 
-<a href="https://bomgarsso.azurewebsites.net/.auth/logout">Logg off</a>
+<a href="https://bomgarsso.azurewebsites.net/.auth/logout"><font color="#E6E6E6">Log off</font></a>
 			
 </body>
 </html>
