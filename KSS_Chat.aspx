@@ -48,7 +48,7 @@
 			
 			function click2chat() {
 				var issue = document.getElementById("GSR_Text")
-				var user = document.title
+				//var user = document.title  //user this line to get user as authenticated by Azure
 
 				BG.start(BG.START_TYPE.CHAT, {
 					issue: {
