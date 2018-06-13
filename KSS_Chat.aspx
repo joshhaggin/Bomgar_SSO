@@ -118,6 +118,8 @@
  </form>
 		
 </div>
+
+<a href="https://bomgarsso.azurewebsites.net/.auth/logout">Logg off</a>
 			
 </body>
 </html>
