@@ -1,13 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="info.aspx.cs" Inherits="Proyecto_SO.info" %>
-<%@ Import Namespace="Proyecto_SO" %>
-
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head runat="server"> 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <%--<title>Kiewit Corporation - Remote Support</title>--%>
-
 
     <style type="text/css">
 		*{
@@ -48,7 +42,7 @@
 			
 			function click2chat() {
 				var issue = document.getElementById("GSR_Text")
-				//var user = document.title  //user this line to get user as authenticated by Azure
+				//var user = "username" //use this line to get user as authenticated by Azure
 
 				BG.start(BG.START_TYPE.CHAT, {
 					issue: {
@@ -80,7 +74,7 @@
         <div id="caja_centro">
 				<div id="caja_info" style="padding-left: 5px; padding-top: 4px" >
                     <img src="untitled.png" />
-                <div align="left" style="color:white; padding-left: 10px; background-color:gray; font-family: Helvetica, Arial, sans-serif; height: 26px; padding-top: 9px">
+                <div align="left" style="color:white; padding-left: 10px; background-color:gray; font-family: Helvetica, Arial, sans-serif; height: 26px; padding-top: 9px; padding-right: 4px">
                     <b>Issue Submission</b>
                 </div>
 
@@ -94,9 +88,8 @@
 								<td align="left">
 									<select id = "Chat_Q">
 										<option value=" "></option>
-										<option value = "SAP_Access">Need help with access in SAP</option>
-										<option value = "MFA">Need help with MFA</option>
-										<option value = "Tech_Support">Need Technical Support</option>
+										<option value = "11">Need help with access in SAP</option>
+										<option value = "10">Need Technical Support</option>
 									</select>
 								</td>
 							</tr>
@@ -130,55 +123,5 @@
 </html>
 
 <script runat="server">
-
-//void login(string nom, string pass)
-//{
-//    string adPath = "LDAP://" + Session["domain"];
-//    LDAPAutenticador aut = new LDAPAutenticador(adPath);
-
-//    try
-//    {
-//        if (aut.autenticado((string)Session["domain"], (string)Session["user"], (string)Session["pass"]) == true)
-//        {
-
-//        }
-
-
-//    }
-//    catch (Exception ex)
-//    {
-//        ScriptManager.RegisterStartupScript(this.Page, this.Page.GetType(), "error", "alert('" + ex.ToString() + "');", true);
-//        Response.Redirect("saml_kss.aspx");
-//    }
-
-//}
-
-//protected void Page_Load(object sender, EventArgs e)
-//{
-
-//    string adPath = "LDAP://" + Session["domain"];
-//    LDAPAutenticador aut = new LDAPAutenticador(adPath);
-
-//    try
-//    {
-//        if (aut.autenticado((string)Session["domain"], (string)Session["user"], (string)Session["pass"]) == true)
-//        {
-
-//        }
-
-//        //var LoggedOnUser = System.Environment.UserName;
-
-//        //Page.Title = LoggedOnUser;
-//        Page.Title = (string)Session["user"];
-
-//    }
-//    catch (Exception ex)
-//    {
-//        ScriptManager.RegisterStartupScript(this.Page, this.Page.GetType(), "error", "alert('" + ex.ToString() + "');", true);
-//        Response.Redirect("saml_kss.aspx");
-//    }
-
-
-//}
-
+    
 </script>
